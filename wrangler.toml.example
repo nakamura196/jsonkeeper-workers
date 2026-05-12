@@ -1,0 +1,19 @@
+name = "jsonkeeper"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+# Firebase project ID used as JWT iss/aud audience. Not a secret.
+FIREBASE_PROJECT_ID = "<your-firebase-project-id>"
+# Comma-separated JSON-LD @type URIs whose @id should be rewritten to the doc URL.
+REWRITE_TYPES = "http://codh.rois.ac.jp/iiif/curation/1#Curation,http://iiif.io/api/presentation/2#Range"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "jsonkeeper"
+# Fill in the id returned by `wrangler d1 create jsonkeeper`.
+database_id = "<your-d1-database-id>"
+migrations_dir = "migrations"
+
+[observability]
+enabled = true

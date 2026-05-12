@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local development with `wrangler dev`.
+# Overrides values from [vars] in wrangler.toml.
+FIREBASE_PROJECT_ID="<your-firebase-project-id>"
+REWRITE_TYPES="http://codh.rois.ac.jp/iiif/curation/1#Curation,http://iiif.io/api/presentation/2#Range"

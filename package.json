@@ -1,0 +1,24 @@
+{
+  "name": "jsonkeeper-workers",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "db:create": "wrangler d1 create jsonkeeper",
+    "db:migrate:local": "wrangler d1 migrations apply jsonkeeper --local",
+    "db:migrate:remote": "wrangler d1 migrations apply jsonkeeper --remote",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "hono": "^4.6.14",
+    "jose": "^5.9.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.99.0"
+  }
+}
