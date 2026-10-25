@@ -13,7 +13,7 @@
     "tail": "wrangler tail"
   },
   "dependencies": {
-    "hono": "^4.13.5",
+    "hono": "^4.13.11",
     "jose": "^5.9.6"
   },
   "devDependencies": {
